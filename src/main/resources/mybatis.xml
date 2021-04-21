@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--settings控制mybatis的全局行为-->
+    <settings>
+        <!--设置mybatis的输出日志-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <typeAliases>
+        <!--设置别名-->
+        <package name="com.zzjm.domain"/>
+    </typeAliases>
+
+    <!--sql mapper(mapper文件的位置)-->
+    <mappers>
+        <mapper resource="com/zzjm/dao/StudentDao.xml"/>
+    </mappers>
+</configuration>
